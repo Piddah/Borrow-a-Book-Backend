@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PDDa82IBMNZV0hEd5Cc8XOim5c2gHAen7r+W2teNIv4=",
+  "Source": "BorrowABook.Backend",
+  "BasePath": "_content/BorrowABook.Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
