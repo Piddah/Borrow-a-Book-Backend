@@ -660,11 +660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\MyNewBorrowABook\\BorrowABook.Backend\\BorrowABook.Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\C#\\BorrowABook\\BorrowABook.Backend\\BorrowABook.Backend.csproj",
       "projectName": "BorrowABook.Backend",
-      "projectPath": "C:\\Users\\Hp\\Desktop\\MyNewBorrowABook\\BorrowABook.Backend\\BorrowABook.Backend.csproj",
+      "projectPath": "C:\\Users\\Hp\\Desktop\\C#\\BorrowABook\\BorrowABook.Backend\\BorrowABook.Backend.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Desktop\\MyNewBorrowABook\\BorrowABook.Backend\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\Desktop\\C#\\BorrowABook\\BorrowABook.Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

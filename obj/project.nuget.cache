@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0V/vWfnuSsc=",
+  "dgSpecHash": "eW9VUHG7IVU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\Desktop\\MyNewBorrowABook\\BorrowABook.Backend\\BorrowABook.Backend.csproj",
+  "projectFilePath": "C:\\Users\\Hp\\Desktop\\C#\\BorrowABook\\BorrowABook.Backend\\BorrowABook.Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.10\\microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",

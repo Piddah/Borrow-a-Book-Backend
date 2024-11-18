@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BorrowABook.Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0330ae3d6fdc9c890cff0903e2ef82c499a0533e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BorrowABook.Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BorrowABook.Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

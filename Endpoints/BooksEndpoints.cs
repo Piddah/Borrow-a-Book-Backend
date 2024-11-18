@@ -37,6 +37,16 @@ public static class BooksEndpoints
             2
         )
     ];
+
+    private static readonly List<BookCopyDto> bookCopies =
+    [
+        new(
+            1, 1
+        ),
+        new(
+            2, 1
+        )
+    ];
     public static RouteGroupBuilder MapBooksEndpoints(this WebApplication app)
     {
 
@@ -50,29 +60,31 @@ public static class BooksEndpoints
 
         group.MapPost("", (NewBookDto book) =>
         {
+            var bookExists = books.FirstOrDefault(b => b.Author == book.Author && b.Title == book.Title);
 
-            int booksAvailible = 1;
-            foreach (var b in books)
+            if (bookExists == null)
             {
-                if (b.Title.Equals(book.Title) && b.Author.Equals(book.Author))
-                {
-                    booksAvailible++;
-                }
+                BookDto newBook = new(
+                    books.Count + 1,
+                    book.Title,
+                    book.Author,
+                    book.Genre,
+                    book.ReleaseYear,
+                    book.Language,
+                    book.Description,
+                    1
+                );
+                bookCopies.Add(new BookCopyDto(books.Count, 1));
+                books.Add(newBook);
+                return Results.CreatedAtRoute(getBook, new { id = newBook.Id }, newBook);
             }
+            else
+            {
+                var newBookCopy = new BookCopyDto(books.Count, 1);
+                bookCopies.Add(newBookCopy);
 
-            BookDto newBook = new(
-                books.Count + 1,
-                book.Title,
-                book.Author,
-                book.Genre,
-                book.ReleaseYear,
-                book.Language,
-                book.Description,
-                booksAvailible
-            );
-            books.Add(newBook);
-            return Results.CreatedAtRoute(getBook, new { id = newBook.Id }, newBook);
-
+                return Results.Ok(new { message = "New copy added", id = newBookCopy.Id });
+            }
         });
 
         group.MapPut("{id}", (int id, UpdateBookDto book) =>
